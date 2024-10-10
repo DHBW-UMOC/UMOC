@@ -17,5 +17,7 @@ This is a placeholder.
 - Sehen was ein User eintippt ohne das er es Abgeschickt hat
 - Chats sind für alle lesbar nur nicht beschreibar
 - es gibt guest accounts
+- jede Nachricht bekommt einen Standort angehängt
+- gelsöchte NAchrichten werden als "Nutzer ... hat folgende NAchricht gelöscht: ..."
 
   Aber...Alles optional anschaltbar
