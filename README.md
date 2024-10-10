@@ -22,4 +22,8 @@ This is a placeholder.
 - in Group write as other user
 - Blockierte Nutzer dürfen eine letzte Nachricht schreiben.
 
+# Andere Features
+
+- Der betrunkene Modus: deine nachrichten werden extra falsch geschrieben
+
   Aber...Alles optional anschaltbar
