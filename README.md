@@ -19,5 +19,7 @@ This is a placeholder.
 - es gibt guest accounts
 - jede Nachricht bekommt einen Standort angehängt
 - gelsöchte NAchrichten werden als "Nutzer ... hat folgende NAchricht gelöscht: ..."
+- in Group write as other user
+- Blockierte Nutzer dürfen eine letzte Nachricht schreiben.
 
   Aber...Alles optional anschaltbar
