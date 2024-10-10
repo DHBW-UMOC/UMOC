@@ -9,3 +9,13 @@ Or go to this Website and Sign up:
 
 # Usage
 This is a placeholder.
+
+
+# Unsichere Ideen
+
+- Einsehen welche nutzer das gleiche Passwort haben
+- Sehen was ein User eintippt ohne das er es Abgeschickt hat
+- Chats sind für alle lesbar nur nicht beschreibar
+- es gibt guest accounts
+
+  Aber...Alles optional anschaltbar
