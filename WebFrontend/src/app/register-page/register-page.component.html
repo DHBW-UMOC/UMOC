@@ -1,0 +1,16 @@
+<form (ngSubmit)="onSubmit()">
+  <label>Username</label>
+  <input type="text" name="username" [(ngModel)]="username" required>
+  <br>
+
+  <label>Password</label>
+  <input type="password" name="password" [(ngModel)]="password" required>
+  <br>
+
+  <label>Email/UserId</label>
+  <input type="text" name="email" [(ngModel)]="email" required>
+  <br>
+
+  <button type="submit">Register</button>
+</form>
+<p>Register does work</p>
