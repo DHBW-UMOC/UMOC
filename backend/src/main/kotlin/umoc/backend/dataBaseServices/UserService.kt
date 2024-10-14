@@ -1,23 +1,26 @@
 package umoc.backend.dataBaseServices
 
-import kotlinx.datetime.Clock
-import kotlinx.datetime.Instant
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 import org.jetbrains.exposed.sql.transactions.transaction
+import org.springframework.stereotype.Service
 import umoc.backend.dataBaseEntitys.User
+import java.util.*
 
+@Service
 class UserService {
     fun insertUser(
         userId: String,
         username: String,
-        password: String
+        password: String,
+        sessionID: UUID?
     ) {
         transaction {
             User.insert {
                 it[User.userId] = userId
                 it[User.username] = username
                 it[User.password] = password
+                it[User.sessionID] = sessionID
             }
         }
     }
@@ -28,9 +31,11 @@ class UserService {
         }
     }
 
-    fun deleteAllUsers() {
+    fun updateSessionId(userId: String, sessionID: UUID?) {
         transaction {
-            User.deleteAll()
+            User.update({ User.userId eq userId }) {
+                it[User.sessionID] = sessionID
+            }
         }
     }
 
@@ -44,7 +49,8 @@ class UserService {
         return UserDto(
             userId = user[User.userId],
             username = user[User.username],
-            password = user[User.password]
+            password = user[User.password],
+            sessionID = user[User.sessionID],
         )
     }
 }
@@ -52,6 +58,7 @@ class UserService {
 data class UserDto(
     val userId: String,
     val username: String,
-    val password: String
+    val password: String,
+    val sessionID: UUID?,
 )
 
