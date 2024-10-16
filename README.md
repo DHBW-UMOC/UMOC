@@ -30,3 +30,6 @@ This is a placeholder.
 - Der betrunkene Modus: deine nachrichten werden extra falsch geschrieben
 
   Aber...Alles optional anschaltbar
+
+
+- Adrian
