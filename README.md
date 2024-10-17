@@ -13,23 +13,33 @@ This is a placeholder.
 
 # Unsichere Ideen
 
-- Einsehen welche nutzer das gleiche Passwort haben
 - Sehen was ein User eintippt ohne das er es Abgeschickt hat
 - Empfänger kann die noch nicht gesandte Nachricht ebenfalls bearbeiten
-- Chats sind für alle lesbar nur nicht beschreibar
-- es gibt guest accounts
+- Es gibt Gast-Nutzer (Anonymous)
 - jede Nachricht bekommt einen Standort angehängt
-- gelsöchte NAchrichten werden als "Nutzer ... hat folgende NAchricht gelöscht: ..."
+- Gelöschte Nachrichten werden als "[Nutzername] hat folgende NAchricht gelöscht: [...]"
 - in Group write as other user
-- Blockierte Nutzer dürfen eine letzte Nachricht schreiben.
-- Gruppen haben ein VoteToKick feature (funktioniert auf mit Admins)
-- Timeouts in Chats und VoteToTimeout in Gruppen
+- Blockierte Nutzer dürfen eine letzte Nachricht schreiben
+- Timeouts in Chats
+- VoteToMute
+- VoteToKick (funktioniert auch mit Admins)
+- VoteToLightMode
+- VoteToMessageTone
+- VoteToX-Features sind auch als konsumierbare Items verfügbar. Diese können durch Lootboxen gewonnen werden.
+- Lootboxen. Diese werden wiederum durch das Ansehen von Werbung erworben.
+- Streaks
+- Lootboxen können mit Streaks gekauft werden
+- See whos online
+- Der betrunkene Modus: Nachrichten werden extra falsch geschrieben
+- Wenn 5 Minuten keine neue Nachricht kommt wird der Hintergrund zu Minecraft Parkour / Subway Surfers / GTA - Gameplay
 
-# Andere Features
-
-- Der betrunkene Modus: deine nachrichten werden extra falsch geschrieben
-
-  Aber...Alles optional anschaltbar
+- Alles optional anschaltbar
 
 
-- Adrian
+
+   _____       .___      .__                
+  /  _  \    __| _/______|__|____    ____   
+ /  /_\  \  / __ |\_  __ \  \__  \  /    \  
+/    |    \/ /_/ | |  | \/  |/ __ \|   |  \ 
+\____|__  /\____ | |__|  |__(____  /___|  / 
+        \/      \/               \/     \/  
