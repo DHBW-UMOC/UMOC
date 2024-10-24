@@ -101,4 +101,3 @@ Beschreibung
 
 ## 4. Technische Einschränkungen
 - Lizenz: GPL 3.0
-- Da es sich bei den Entwicklern um eine hypermotivierte Hauptschüler handelt ist nicht zu erwarten dass die Anwendung tatsächlich komplett sicher sein wird.
