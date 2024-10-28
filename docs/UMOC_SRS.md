@@ -35,6 +35,10 @@ Nutzer müssen zuallererst in der Lage zu sein miteinander zu kommunizieren. In 
 - Textnachrichten können verschlüsselt gesendet werden.
 - Textnachrichten werden auf dem Server persistiert.
 
+#### Wichtige Diagrame
+![sequenzdiagram drawio](https://github.com/user-attachments/assets/996e03aa-bef8-425f-9491-e5a4f872fef3)
+![Aktivitäts_Diagramme drawio](https://github.com/user-attachments/assets/394d3940-0aa8-4d45-978e-fcaf1dc05bf4)
+
 #### Relevante Stories:
 - SCRUM-1
 - SCRUM-6
