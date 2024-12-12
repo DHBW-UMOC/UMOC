@@ -3,15 +3,10 @@ Unsafe Method Of Communication
 
 <img src="https://github.com/user-attachments/assets/ec5ba59d-0b3d-45ac-8bb2-6c434bdac538" alt="drawing" width="400"/>
 
-# Installation
-Download the folowing app:
-Or go to this Website and Sign up: 
-
 # Usage
-This is a placeholder.
+Go to this Website and Sign up: soon...
 
-
-# Unsichere Ideen
+# Unsichere Ideen (Umoc Features)
 
 - Sehen was ein User eintippt ohne das er es Abgeschickt hat
 - Empfänger kann die noch nicht gesandte Nachricht ebenfalls bearbeiten
