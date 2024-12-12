@@ -6,7 +6,7 @@ Unsafe Method Of Communication
 # Usage
 Go to this Website and Sign up: soon...
 
-# Unsichere Ideen (Umoc Features)
+# Unsichere Ideen (UMOC Features)
 
 - Sehen was ein User eintippt ohne das er es Abgeschickt hat
 - Empfänger kann die noch nicht gesandte Nachricht ebenfalls bearbeiten
