@@ -33,6 +33,7 @@ This is a placeholder.
 - Der betrunkene Modus: Nachrichten werden extra falsch geschrieben
 - Wenn 5 Minuten keine neue Nachricht kommt wird der Hintergrund zu Minecraft Parkour / Subway Surfers / GTA - Gameplay
 - "crazy" Stichwort löst "I was crazy once aus"
+- User Badges
 
 - Alles optional anschaltbar
 
