@@ -376,6 +376,47 @@ online-Dokumentation (auf Englisch!).
 ## Qualitätsbaum
 ![Quality Requirements.png](https://github.com/DHBW-UMOC/UMOC/blob/master/docs/Quality%20Requirements.png)
 ## Qualitätsszenarien
+### Performance
+#### [A1] Latenz
+- Antwortzeit für Nachrichten
+- Verbindungsaufbauzeit
+#### [A2] Durchsatz
+- Anzahl der Nachrichten pro Sekunde
+- Maximale gleichzeitige Verbindungen
+#### [A3] Ressourcennutzung
+- CPU-Auslastung
+- Speicherverbrauch
+
+### Sicherheit
+#### [B1] Authentifizierung
+- Methoden der Benutzeranmeldung (z.B. OAuth, Zwei-Faktor)
+#### [B2] Vertraulichkeit
+- Verschlüsselung (z.B. AES für gespeicherte Nachrichten)
+#### [B3] Zugriffskontrolle
+- Rollenbasierte Zugriffskontrolle
+- Berechtigungen für verschiedene Benutzer
+
+### Usability
+#### [C1] Benutzeroberfläche
+- Klarheit der Navigation
+- Konsistenz der Gestaltung
+#### [C2] Reaktionsfähigkeit
+- Ladezeiten der Benutzeroberfläche
+- Zeit bis zur ersten Aktion (z.B. Nachrichten senden)
+#### [C3] Hilfestellungen
+- Tooltips
+- FAQs und Onboarding-Prozesse
+
+### Zuverlässigkeit
+#### [D1] Verfügbarkeit
+- Uptime: Prozentuale Verfügbarkeit des Systems über einen definierten Zeitraum (z.B. 99,9%).
+- Fehlerbehandlung: Mechanismen zur automatischen Wiederherstellung nach Serverausfällen.
+#### [D2] Fehlertoleranz
+- Backup-Mechanismen: Maßnahmen zur Sicherung von Daten und Kontinuität bei Systemausfällen.
+- Redundanz: Einsatz von redundanten Komponenten (z.B. Server, Datenbanken) zur Sicherstellung der Betriebskontinuität.
+#### [D3] Wiederherstellbarkeit
+- Backup-Frequenz: Häufigkeit der Datensicherungen zur Minimierung von Datenverlust.
+- Wiederherstellungszeit: Zeit, die benötigt wird, um nach einem Ausfall den Normalbetrieb wiederherzustellen (RTO – Recovery Time Objective).
 
 ---
 # Risiken und technische Schulden
