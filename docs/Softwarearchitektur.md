@@ -292,9 +292,11 @@ arc42 für die weiteren Ebenen.
 ## Create User/Register
 ![Sequence Diagram Create User](https://github.com/DHBW-UMOC/UMOC/blob/master/docs/Sequence%20Diagram%20Create%20User.png)
 
-## *\<Bezeichnung Laufzeitszenario n>*
-
-…
+### Erklärung
+1. **Create User**: Der Benutzer initiiert den Prozess zur Erstellung eines neuen Benutzers über den Client, durch eine Registrierung.
+2. **Send Data**: Der Client sendet die enigegebenen Benutzerdaten an den Server.
+3. **Store User**: Der Server empfängt die Benutzerdate und leitet den Speichervorgang ein. Hierbei wird eine Anfrage an die Datenbank gesendet, um die neuen Benutzerdaten zu speichern.
+4. **Return**: Die Datenbank gibt dem Server eine Bestätigung, dass der Benutzer erfolgreich erstellt wurde. Der Server sendet anschließend eine Bestätigung dem Client zu, um den Benutzer zu informieren, dass der Benutzer erfolgreich erstellt wurde.
 
 ---
 # Verteilungssicht
