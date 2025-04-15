@@ -7,6 +7,7 @@ UMOC ("Unsafe Method of Commuunication") ist ein webbasierter Messenger, der sic
 - Echtzeit-Nachrichtenaustausch mit Websockets.
 - "Unsafe"-Features: Nachrichten andere sehen während sie getippt werden, TikTok ADHS modus, Last Message von blockierten benutzern [und vieles mehr.](https://github.com/DHBW-UMOC/UMOC/blob/master/README.md)
 - Web-UI nach Vorbild moderner Messenger (WhatsApp/Discord).
+  
 **Referenzen**: [Software Requirement Specification](https://github.com/DHBW-UMOC/UMOC/blob/master/docs/UMOC_SRS.md)
 
 ## Qualitätsziele
