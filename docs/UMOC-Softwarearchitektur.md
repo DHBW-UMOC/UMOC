@@ -67,7 +67,7 @@ UMOC ("Unsafe Method of Commuunication") ist ein webbasierter Messenger, der sic
 
 ---
 # Bausteinsicht
-
+<!--
 <div class="formalpara-title">
 
 **Inhalt**
@@ -273,9 +273,9 @@ arc42 für die weiteren Ebenen.
 ### Whitebox \<\_Baustein y.1\_\>
 
 *\<Whitebox-Template>*
-
+-->
 # Laufzeitsicht
-
+<!--
 <div class="formalpara-title">
 
 **Inhalt**
@@ -354,7 +354,7 @@ online-Dokumentation (auf Englisch!).
 ## *\<Bezeichnung Laufzeitszenario n>*
 
 …
-
+-->
 # Verteilungssicht
 ---
 # Querschnittliche Konzepte
