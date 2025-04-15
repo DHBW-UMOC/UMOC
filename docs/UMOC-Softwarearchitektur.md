@@ -2,54 +2,14 @@
 
 ## Aufgabenstellung
 
-<div class="formalpara-title">
-
-**Inhalt**
-
-</div>
-
-UMOC ("Unsafe Method Of Communication") ist ein webbasierter Messenger, der sichere Ende-zu-Ende-Verschlüsselung mit absichtlich "unsicheren" Interaktiensfeatures kombiniert.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Die Motivation hinter UMOC ist die erstellung eines Humorvollen Chat Messengers.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
+UMOC ("Unsafe Method of Commuunication") ist ein webbasierter Messenger, der sichere Ende-zu-Ende-Verschlüsselung (E2EE) mit absichtlich "unsicheren" Interaktionsfeatures kombiniert.
+**Kernfunktionen**:
 - Echtzeit-Nachrichtenaustausch mit Websockets.
 - "Unsafe"-Features: Nachrichten andere sehen während sie getippt werden, TikTok ADHS modus, Last Message von blockierten benutzern [und vieles mehr.](https://github.com/DHBW-UMOC/UMOC/blob/master/README.md)
+- Web-UI nach Vorbild moderner Messenger (WhatsApp/Discord).
+**Referenzen**: [Software Requirement Specification](https://github.com/DHBW-UMOC/UMOC/blob/master/docs/UMOC_SRS.md)
 
 ## Qualitätsziele
-
-<div class="formalpara-title">
-
-**Inhalt**
-
-</div>
-
-Sicherheit, Leistungseffizienz, Benutzerfreundlichkeit.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-UMOC soll eine sichere, responsive Webapp sein, mit einer Intuitiven UI, um zu einem das Motto "Unsafe but Secure" zu erfüllen, und auch den Benutzern ein gutes Erlebnis zu verschaffen.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
 
 | Priorität | Qualitätsziel                | Konkretes Szenario                                                                 |
 |-----------|------------------------------|-----------------------------------------------------------------------------------|
@@ -59,50 +19,14 @@ UMOC soll eine sichere, responsive Webapp sein, mit einer Intuitiven UI, um zu e
 
 ## Stakeholder
 
-<div class="formalpara-title">
-
-**Inhalt**
-
-</div>
-
-Expliziter Überblick über die Stakeholder des Systems – über alle
-Personen, Rollen oder Organisationen –, die
-
--   die Architektur kennen sollten oder
-
--   von der Architektur überzeugt werden müssen,
-
--   mit der Architektur oder dem Code arbeiten (z.B. Schnittstellen
-    nutzen),
-
--   die Dokumentation der Architektur für ihre eigene Arbeit benötigen,
-
--   Entscheidungen über das System und dessen Entwicklung treffen.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Sie sollten die Projektbeteiligten und -betroffenen kennen, sonst
-erleben Sie später im Entwicklungsprozess Überraschungen. Diese
-Stakeholder bestimmen unter anderem Umfang und Detaillierungsgrad der
-von Ihnen zu leistenden Arbeit und Ergebnisse.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Tabelle mit Rollen- oder Personennamen, sowie deren Erwartungshaltung
-bezüglich der Architektur und deren Dokumentation.
-
 | Rolle        | Kontakt        | Erwartungshaltung |
 |--------------|----------------|-------------------|
-| *\<Rolle-1>* | *\<Kontakt-1>* | *\<Erwartung-1>*  |
-| *\<Rolle-2>* | *\<Kontakt-2>* | *\<Erwartung-2>*  |
+| Stakeholder/Dozent | Ichters, Harald | Funktionierender Webbasierter Messenger  |
+| Product Owner/Backend Developer | [Rohrhirsch, Max](https://github.com/Max-Rohrhirsch) | Klare Vision und Priorisierung der Produktanforderungen. |
+| Scrum Master/Designer | [Schön, Adrian](https://github.com/AAAAAAAdrian) | Sicherstellung eines reibungslosen Scrum-Prozesses, Design der UI. |
+| Backend Developer | [Lingenfelser, Pascal](https://github.com/pplayer1712) | Stabile und skalierbare Backend-Lösungen, klare technische Anforderungen und Unterstützung bei der Problemlösung |
+| Frontend Developer | [Mohr, Lucas](https://github.com/Max-Rohrhirsch) | Benutzerfreundliche und ansprechende Benutzeroberflächen, Zusammenarbeit mit dem Designer. |
+| Seelischer Beistand | [Schmidt, Jan Mathis](https://github.com/schmid-di) | Bereitstellung von emotionaler Unterstützung und Teamzusammenhalt, Förderung eines positiven Arbeitsumfelds. |
 
 # Randbedingungen
 
