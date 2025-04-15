@@ -35,11 +35,7 @@ Die Motivation hinter UMOC ist die erstellung eines Humorvollen Chat Messengers.
 
 </div>
 
-| Priorität | Qualitätsziel                | Konkretes Szenario                                                                 |
-|-----------|------------------------------|-----------------------------------------------------------------------------------|
-| 1         | Sicherheit                   | Alle Nachrichten sind standardmäßig E2EE-verschlüsselt (ISO 25010: Security).   |
-| 2         | Leistung                     | Nachrichtenbearbeitung in Echtzeit (<500 ms Latenz, ISO 25010: Performance Efficiency).|
-| 3         | Benutzerfreundlichkeit       | UI-Ladezeit <2 Sekunden, intuitive Navigation (ISO 25010: Interaction Capability).|
+Sicherheit, Leistungseffizienz, Benutzerfreundlichkeit.
 
 <div class="formalpara-title">
 
@@ -47,9 +43,7 @@ Die Motivation hinter UMOC ist die erstellung eines Humorvollen Chat Messengers.
 
 </div>
 
-Weil Qualitätsziele grundlegende Architekturentscheidungen oft
-maßgeblich beeinflussen, sollten Sie die für Ihre Stakeholder relevanten
-Qualitätsziele kennen, möglichst konkret und operationalisierbar.
+UMOC soll eine sichere, responsive Webapp sein, mit einer Intuitiven UI, um zu einem das Motto "Unsafe but Secure" zu erfüllen, und auch den Benutzern ein gutes Erlebnis zu verschaffen.
 
 <div class="formalpara-title">
 
@@ -57,8 +51,11 @@ Qualitätsziele kennen, möglichst konkret und operationalisierbar.
 
 </div>
 
-Tabellarische Darstellung der Qualitätsziele mit möglichst konkreten
-Szenarien, geordnet nach Prioritäten.
+| Priorität | Qualitätsziel                | Konkretes Szenario                                                                 |
+|-----------|------------------------------|-----------------------------------------------------------------------------------|
+| 1         | Sicherheit                   | Alle Nachrichten sind standardmäßig E2EE-verschlüsselt (ISO 25010: Security).   |
+| 2         | Leistungseffizienz                     | Nachrichtenbearbeitung in Echtzeit (<500 ms Latenz, ISO 25010: Performance Efficiency).|
+| 3         | Benutzungsfreundlichkeit       | UI-Ladezeit <2 Sekunden, intuitive Navigation (ISO 25010: Interaction Capability).|
 
 ## Stakeholder
 
