@@ -35,17 +35,11 @@ Die Motivation hinter UMOC ist die erstellung eines Humorvollen Chat Messengers.
 
 </div>
 
-Die Top-3 bis Top-5 der Qualitätsanforderungen für die Architektur,
-deren Erfüllung oder Einhaltung den maßgeblichen Stakeholdern besonders
-wichtig sind. Gemeint sind hier wirklich Qualitätsziele, die nicht
-unbedingt mit den Zielen des Projekts übereinstimmen. Beachten Sie den
-Unterschied.
-
-Hier ein Überblick möglicher Themen (basierend auf dem ISO 25010
-Standard):
-
-![Kategorien von
-Qualitätsanforderungen](images/01_2_iso-25010-topics-DE.drawio.png)
+| Priorität | Qualitätsziel                | Konkretes Szenario                                                                 |
+|-----------|------------------------------|-----------------------------------------------------------------------------------|
+| 1         | Sicherheit                   | Alle Nachrichten sind standardmäßig E2EE-verschlüsselt (ISO 25010: Security).   |
+| 2         | Leistung                     | Nachrichtenbearbeitung in Echtzeit (<500 ms Latenz, ISO 25010: Performance Efficiency).|
+| 3         | Benutzerfreundlichkeit       | UI-Ladezeit <2 Sekunden, intuitive Navigation (ISO 25010: Interaction Capability).|
 
 <div class="formalpara-title">
 
