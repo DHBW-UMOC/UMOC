@@ -5,7 +5,7 @@
 UMOC ("Unsafe Method of Commuunication") ist ein webbasierter Messenger, der sichere Ende-zu-Ende-Verschlüsselung (E2EE) mit absichtlich "unsicheren" Interaktionsfeatures kombiniert.
 **Kernfunktionen**:
 - Echtzeit-Nachrichtenaustausch mit Websockets.
-- "Unsafe"-Features: Nachrichten andere sehen während sie getippt werden, TikTok ADHS modus, Last Message von blockierten benutzern [und vieles mehr.](https://github.com/DHBW-UMOC/UMOC/blob/master/README.md)
+- "Unsafe"-Features: Nachrichten andere sehen während sie getippt werden, TikTok-ADHS-Modus, Last Message von blockierten benutzern [und vieles mehr.](https://github.com/DHBW-UMOC/UMOC/blob/master/README.md)
 - Web-UI nach Vorbild moderner Messenger (WhatsApp/Discord).
   
 **Referenzen**: [Software Requirement Specification](https://github.com/DHBW-UMOC/UMOC/blob/master/docs/Software%20Requirements%20Specification.md)
@@ -277,13 +277,19 @@ arc42 für die weiteren Ebenen.
 -->
 ---
 # Laufzeitsicht
-## *\<Bezeichnung Laufzeitszenario 1>*
+## Login
 ![Sequence Diagram Login](https://github.com/DHBW-UMOC/UMOC/blob/master/docs/Sequence%20Diagram%20Login.png)
 
--   \<hier Besonderheiten bei dem Zusammenspiel der Bausteine in diesem
-    Szenario erläutern>
+### Erklärung
+1. **Login**: Der User initiiert den Anmeldeprozess über den Client, indem er seinen Benutzernamen und sein Passwort eingibt.
+2. **Send Password & Username**: Der Client sendet die Anmeldedaten an den Server.
+3. **Check Input**: Der Server empfängt die Anmeldedaten und leitet eine Validierung ein. Hierbei wird eine Anfrage an die Datenbank gesendet, um die Eingaben zu prüfen.
+4. **return User on None**: Die Datenbank sucht nach dem Benutzer und vergleicht das eingegebene Passwort. Wenn ein Benutzer existiert, wird dieser zurückgegeben, andernfalls nicht.
+5. **return Error**: Wenn die Datenbank keinen Benutzer zurückgibt, bedeutet das, dass die Anmeldedaten ungültig sind. Der Server sendet eine Fehlermeldung zurück an den Client, um den Benutzer über die falschen Anmeldedaten zu informieren.
+6. **Set Session Key**: Gibt die Datenbank einen Benutzer zurück, wird ein Sitzungsschlüssel generiert und der Datenbank mitgeteilt.
+7. **Send Session Key**: Der Server sendet den Sitzungsschlüssel zurück an den Client, der nun für die Dauer der Sitzung verwendet wird.
 
-## *\<Bezeichnung Laufzeitszenario 2>*
+## Create User/Register
 ![Sequence Diagram Create User](https://github.com/DHBW-UMOC/UMOC/blob/master/docs/Sequence%20Diagram%20Create%20User.png)
 
 ## *\<Bezeichnung Laufzeitszenario n>*
