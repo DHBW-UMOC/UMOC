@@ -36,7 +36,7 @@ UMOC ("Unsafe Method of Commuunication") ist ein webbasierter Messenger, der sic
 | Technisch         | Verwendung von **Angular (Frontend)**, **Flask (Backend)**, **SQLite**, Websockets. |
 | Organisatorisch   | Projektabgabe bis [30.06.2025], Entwicklung im 5-Personen-Team mit Scrum.          |
 | Rechtlich         | Open-Source-Lizenz (GPL 3.0), keine kommerzielle Nutzung.                     |
-| Konventionen      | Vibe-Coding, Git-Branching (Feature-Branches).                |
+| Konventionen      | Clean Code, Testing, Git-Branching (Feature-Branches).                |
 
 ---
 # Kontextabgrenzung
