@@ -274,6 +274,7 @@ arc42 für die weiteren Ebenen.
 
 *\<Whitebox-Template>*
 -->
+---
 # Laufzeitsicht
 <!--
 <div class="formalpara-title">
@@ -355,10 +356,13 @@ online-Dokumentation (auf Englisch!).
 
 …
 -->
+---
 # Verteilungssicht
+<!-- Kapitel 7 (Irgendwann in Zukunft machen)-->
 ---
 # Querschnittliche Konzepte
---
+<!-- Kapitel 8 (Irgendwann in Zukunft machen)-->
+---
 # Architekturentscheidungen
 
 | Entscheidung               | Alternativen       | Begründung                                                                 |
@@ -368,116 +372,13 @@ online-Dokumentation (auf Englisch!).
 ---
 # Qualitätsanforderungen
 
-<div class="formalpara-title">
-
-**Inhalt**
-
-</div>
-
-Dieser Abschnitt enthält möglichst alle Qualitätsanforderungen als
-Qualitätsbaum mit Szenarien. Die wichtigsten davon haben Sie bereits in
-Abschnitt 1.2 (Qualitätsziele) hervorgehoben.
-
-Nehmen Sie hier auch Qualitätsanforderungen geringerer Priorität auf,
-deren Nichteinhaltung oder -erreichung geringe Risiken birgt.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Weil Qualitätsanforderungen die Architekturentscheidungen oft maßgeblich
-beeinflussen, sollten Sie die für Ihre Stakeholder relevanten
-Qualitätsanforderungen kennen, möglichst konkret und operationalisiert.
-
-<div class="formalpara-title">
-
-**Weiterführende Informationen**
-
-</div>
-
-Siehe [Qualitätsanforderungen](https://docs.arc42.org/section-10/) in
-der online-Dokumentation (auf Englisch!).
-
 ## Qualitätsbaum
-
-<div class="formalpara-title">
-
-**Inhalt**
-
-</div>
-
-Der Qualitätsbaum (à la ATAM) mit Qualitätsszenarien an den Blättern.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Die mit Prioritäten versehene Baumstruktur gibt Überblick über
-die — oftmals zahlreichen — Qualitätsanforderungen.
-
--   Baumartige Verfeinerung des Begriffes „Qualität“, mit „Qualität“
-    oder „Nützlichkeit“ als Wurzel.
-
--   Mindmap mit Qualitätsoberbegriffen als Hauptzweige
-
-In jedem Fall sollten Sie hier Verweise auf die Qualitätsszenarien des
-folgenden Abschnittes aufnehmen.
 
 ## Qualitätsszenarien
 
-<div class="formalpara-title">
-
-**Inhalt**
-
-</div>
-
-Konkretisierung der (in der Praxis oftmals vagen oder impliziten)
-Qualitätsanforderungen durch (Qualitäts-)Szenarien.
-
-Diese Szenarien beschreiben, was beim Eintreffen eines Stimulus auf ein
-System in bestimmten Situationen geschieht.
-
-Wesentlich sind zwei Arten von Szenarien:
-
--   Nutzungsszenarien (auch bekannt als Anwendungs- oder
-    Anwendungsfallszenarien) beschreiben, wie das System zur Laufzeit
-    auf einen bestimmten Auslöser reagieren soll. Hierunter fallen auch
-    Szenarien zur Beschreibung von Effizienz oder Performance. Beispiel:
-    Das System beantwortet eine Benutzeranfrage innerhalb einer Sekunde.
-
--   Änderungsszenarien beschreiben eine Modifikation des Systems oder
-    seiner unmittelbaren Umgebung. Beispiel: Eine zusätzliche
-    Funktionalität wird implementiert oder die Anforderung an ein
-    Qualitätsmerkmal ändert sich.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Szenarien operationalisieren Qualitätsanforderungen und machen deren
-Erfüllung mess- oder entscheidbar.
-
-Insbesondere wenn Sie die Qualität Ihrer Architektur mit Methoden wie
-ATAM überprüfen wollen, bedürfen die in Abschnitt 1.2 genannten
-Qualitätsziele einer weiteren Präzisierung bis auf die Ebene von
-diskutierbaren und nachprüfbaren Szenarien.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Entweder tabellarisch oder als Freitext.
-
+---
 # Risiken und technische Schulden
-
+<!--
 <div class="formalpara-title">
 
 **Inhalt**
@@ -508,9 +409,10 @@ oder dem Abbau der technischen Schulden.
 Siehe [Risiken und technische
 Schulden](https://docs.arc42.org/section-11/) in der
 online-Dokumentation (auf Englisch!).
-
+-->
+---
 # Glossar
-
+<!--
 <div class="formalpara-title">
 
 **Inhalt**
@@ -541,7 +443,7 @@ Eventuell weitere Spalten mit Übersetzungen, falls notwendig.
 
 Siehe [Glossar](https://docs.arc42.org/section-12/) in der
 online-Dokumentation (auf Englisch!).
-
+-->
 | Begriff        | Definition        |
 |----------------|-------------------|
 | *\<Begriff-1>* | *\<Definition-1>* |
