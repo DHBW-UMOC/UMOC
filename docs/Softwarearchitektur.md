@@ -232,8 +232,9 @@ Eventuell weitere Spalten mit Übersetzungen, falls notwendig.
 
 Siehe [Glossar](https://docs.arc42.org/section-12/) in der
 online-Dokumentation (auf Englisch!).
--->
+
 | Begriff        | Definition        |
 |----------------|-------------------|
 | *\<Begriff-1>* | *\<Definition-1>* |
 | *\<Begriff-2*  | *\<Definition-2>* |
+-->
