@@ -9,20 +9,21 @@ Go to this Website and Sign up: app.umoc.chat
 # Unsichere Ideen (UMOC Features)
 
 - Sehen was ein User eintippt ohne das er es Abgeschickt hat ✓
-- Empfänger kann die noch nicht gesandte Nachricht ebenfalls bearbeiten ╳
-- Es gibt Gast-Nutzer (Anonymous) ╳
-- jede Nachricht bekommt einen Standort angehängt ╳
+- Streaks ✓
+- VoteToX-Features sind auch als konsumierbare Items verfügbar. Diese können durch Lootboxen gewonnen werden. ✓
 - Gelöschte Nachrichten werden als "[Nutzername] hat folgende NAchricht gelöscht: [...]" ✓
 - in Group write as other user ✓
 - Blockierte Nutzer dürfen eine letzte Nachricht schreiben ✓
 - Timeouts in Chats ✓
+
+- Empfänger kann die noch nicht gesandte Nachricht ebenfalls bearbeiten ╳
+- Es gibt Gast-Nutzer (Anonymous) ╳
+- jede Nachricht bekommt einen Standort angehängt ╳
 - VoteToMute ╳
 - VoteToKick (funktioniert auch mit Admins) ╳
 - VoteToLightMode ╳
 - VoteToMessageTone ╳
-- VoteToX-Features sind auch als konsumierbare Items verfügbar. Diese können durch Lootboxen gewonnen werden. ✓
 - Lootboxen. Diese werden wiederum durch das Ansehen von Werbung erworben. ╳
-- Streaks ✓
 - Lootboxen können mit Streaks gekauft werden ╳
 - See whos online ╳
 - Der betrunkene Modus: Nachrichten werden extra falsch geschrieben ╳
