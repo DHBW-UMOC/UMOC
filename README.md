@@ -10,14 +10,14 @@ Go to this Website and Sign up: app.umoc.chat
 
 - Sehen was ein User eintippt ohne das er es Abgeschickt hat ✓✓
 - Blockierte Nutzer dürfen eine letzte Nachricht schreiben ✓✓
-
+---
 - Item: Show ads ✓
 - Item: Alt. Background ✓
 - Streaks welche einem Nutzer Punkte generieren ✓
 - Unsichere-Features sind als konsumierbare Items verfügbar. Diese können mit Punkten gekauft werden. ✓
 - Gelöschte Nachrichten werden als "[Nutzername] hat folgende NAchricht gelöscht: [...]" ✓
 - Timeouts in Chats ✓
-
+---
 - in Group write as other user ╳
 - Empfänger kann die noch nicht gesandte Nachricht ebenfalls bearbeiten ╳
 - Es gibt Gast-Nutzer (Anonymous) ╳
