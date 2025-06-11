@@ -8,14 +8,17 @@ Go to this Website and Sign up: app.umoc.chat
 
 # Unsichere Ideen (UMOC Features)
 
-- Sehen was ein User eintippt ohne das er es Abgeschickt hat ✓
-- Streaks ✓
-- VoteToX-Features sind auch als konsumierbare Items verfügbar. Diese können durch Lootboxen gewonnen werden. ✓
+- Sehen was ein User eintippt ohne das er es Abgeschickt hat ✓✓
+- Blockierte Nutzer dürfen eine letzte Nachricht schreiben ✓✓
+
+- Item: Show ads ✓
+- Item: Alt. Background ✓
+- Streaks welche einem Nutzer Punkte generieren ✓
+- Unsichere-Features sind als konsumierbare Items verfügbar. Diese können mit Punkten gekauft werden. ✓
 - Gelöschte Nachrichten werden als "[Nutzername] hat folgende NAchricht gelöscht: [...]" ✓
-- in Group write as other user ✓
-- Blockierte Nutzer dürfen eine letzte Nachricht schreiben ✓
 - Timeouts in Chats ✓
 
+- in Group write as other user ╳
 - Empfänger kann die noch nicht gesandte Nachricht ebenfalls bearbeiten ╳
 - Es gibt Gast-Nutzer (Anonymous) ╳
 - jede Nachricht bekommt einen Standort angehängt ╳
@@ -28,6 +31,6 @@ Go to this Website and Sign up: app.umoc.chat
 - See whos online ╳
 - Der betrunkene Modus: Nachrichten werden extra falsch geschrieben ╳
 - Wenn 5 Minuten keine neue Nachricht kommt wird der Hintergrund zu Minecraft Parkour / Subway Surfers / GTA - Gameplay ╳
-- "crazy" Stichwort löst "I was crazy once aus" ╳
+- "crazy" Stichwort löst "I was crazy once" aus ╳
 - User Badges ╳
 - Alles optional anschaltbar ╳
