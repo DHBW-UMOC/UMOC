@@ -1,7 +1,7 @@
 # What is UMOC?
 Unsafe Method Of Communication 
 
-<img src="https://github.com/user-attachments/assets/ec5ba59d-0b3d-45ac-8bb2-6c434bdac538" alt="drawing" width="400"/>
+![UMOC-Logo](https://github.com/user-attachments/assets/f47b3b08-f484-4cec-acc5-80cebae31700)
 
 # Usage
 Go to this Website and Sign up: app.umoc.chat
@@ -13,13 +13,12 @@ Go to this Website and Sign up: app.umoc.chat
 - Item: Show ads ✓✓
 - Item: Alt. Background ✓✓
 - Timeouts in Chats ✓✓
+- Gelöschte Nachrichten werden als "[Nutzername] hat folgende NAchricht gelöscht: [...]" ✓✓
+- Item: Lightmode ✓✓
+- Unsichere-Features sind als konsumierbare Items verfügbar ✓✓
 ---
-
 - Streaks welche einem Nutzer Punkte generieren ✓
-- Unsichere-Features sind als konsumierbare Items verfügbar. Diese können mit Punkten gekauft werden. ✓
-- Gelöschte Nachrichten werden als "[Nutzername] hat folgende NAchricht gelöscht: [...]" ✓
-- Item: Lightmode ✓
-
+- Mit Punkten können Items gekauft werden. ✓
 ---
 - in Group write as other user ╳
 - Empfänger kann die noch nicht gesandte Nachricht ebenfalls bearbeiten ╳
