@@ -106,10 +106,52 @@ UMOC ("Unsafe Method of Commuunication") ist ein webbasierter Messenger, der sic
 
 ---
 # Verteilungssicht
-<!-- Kapitel 7 (Irgendwann in Zukunft machen)-->
+## Infrastruktur Ebene 1
+![image](https://github.com/user-attachments/assets/709aadcb-bacb-44e8-8c7c-9d4b8ec403d4)
+
+
+Übersichtsdiagramm/Bereitstellungdiagramm
+
+Die gesamte Anwendung (Frontend, Backend und Datenbank) wird auf einem Raspberry Pi betrieben, der über einen Cloudflare Tunnel öffentlich zugänglich gemacht wird. Auf dem Raspberry Pi wird Portainer genutzt um die einzelnen kontainerisierten Komponenten mit einem graphischen Dashboard zu betreiben.
+
+Begründung:
+Da UMOC primär als universitäres Projekt konzipiert wurde und den Charakter eines Proof of Concept hat, wurde eine schlanke und kosteneffiziente Infrastruktur gewählt. Der Betrieb auf einem Raspberry Pi ermöglicht eine einfache Verwaltung und minimiert den Administrationsaufwand.
+
+## Qualitäts- und/oder Leistungsmerkmale:
+- **Zugangsbeschränkung**: Nur Anfragen aus Deutschland werden durch die Cloudflare-Konfiguration zugelassen
+- **TLS-Verschlüsselung**: Bereitstellung über HTTPS dank Cloudflare-Integration
+- **Vereinfachter Betrieb**: Eine einzige Umgebung für Entwicklung und Produktion
+
+
+Zuordnung von Bausteinen zu Infrastruktur:
+
+| Komponente       | Infrastrukturelement | Erläuterung                               |
+|------------------|----------------------|-------------------------------------------|
+| Angular Frontend | Raspberry Pi         | Wird als statische Ressource ausgeliefert |
+| Flask Backend    | Raspberry Pi         | REST-API und Websocket-Server             |
+| SQLite Datenbank | Raspberry Pi         | Lokale Datenbankdatei                     |
+
+
 ---
 # Querschnittliche Konzepte
-<!-- Kapitel 8 (Irgendwann in Zukunft machen)-->
+## Architektur- und Kommunikationsmuster
+### REST-API (Client-Server):
+Bildet die Grundlage der Kommunikation zwischen Frontend und Backend.
+### Websockets (Event-Based):
+Websockets ermöglichen reaktive Echtzeit-Updates. Die Anwendung wurde inkrementell entwickelt, wodurch frühe Features hauptsächlich die REST-API nutzen. Der Websocket-Kanal dient zunächst als "Trigger", der dem Frontend mitteilt, wann REST-Endpunkte abgefragt werden müssen. Spätere Features beziehen ihre Daten direkt über Websockets.
+
+## Sicherheitskonzept
+- **Transportverschlüsselung**: TLS via Cloudflare-Dienst statt der ursprünglich geplanten E2EE
+- **Regionaler Zugriff**: Beschränkung auf Anfragen aus Deutschland
+- **JWT-basierte Authentifizierung**: Sichert die Benutzeridentität
+- **Klare Trennung von "unsafe" und "unsecure"**: Die "unsafe" Features beeinträchtigen nicht die Systemsicherheit
+## Persistenzkonzept
+- **SQLite Datenbank**: Einzige Persistenzschicht für alle Anwendungsdaten
+- **ORM-Mapping**: Verwendung von sqlalchemy für typsichere Datenbankzugriffe
+## Fehlerbehandlung und Robustheit
+- **Frontend-Resilienz**: Das Frontend ist darauf ausgelegt, Nutzerfehler abzufangen
+- **Backend-Isolation**: Backend-Fehler wirken sich nicht auf die Frontend-Stabilität aus (sofern der Server nicht vollständig abstürzt)
+- **Metriken**: Antwortzeiten werden protokolliert, um Probleme frühzeitig zu erkennen
 ---
 # Architekturentscheidungen
 
@@ -167,74 +209,26 @@ UMOC ("Unsafe Method of Commuunication") ist ein webbasierter Messenger, der sic
 
 ---
 # Risiken und technische Schulden
-<!--
-<div class="formalpara-title">
+| Risiko/Schuld                                         | Priorität | Auswirkungen                                                     | Gegenmaßnahmen                                       |
+|-------------------------------------------------------|-----------|------------------------------------------------------------------|------------------------------------------------------|
+| Fehlende End-to-End-Verschlüsselung                   | Mittel    | Nachrichten könnten theoretisch auf dem Server eingesehen werden | Implementierung der ursprünglich geplanten E2EE      |
+| Monolithische Backend-Architektur                     | Mittel    | Erschwerte Skalierbarkeit, Wartbarkeit und Teamarbeit            | Modularisierung in klar definierte Services          |
+| Keine verteilte Infrastruktur                         | Mittel    | Single Point of Failure (Raspberry Pi)                           | Container-basierte Verteilung, Cloud-Backup          |
+| Ineffiziente Kommunikation (REST via Websocket-Events)| Niedrig   | Erhöhte Latenz bei Nachrichtenübermittlung                       | Direkte Websocket-Nutzung für alle Echtzeit-Features |
+| Keine Backup-Lösung für SQLite                        | Hoch      | Möglicher Datenverlust bei Hardware-Ausfällen                    | Regelmäßige Backups, Replikation                     |
 
-**Inhalt**
-
-</div>
-
-Eine nach Prioritäten geordnete Liste der erkannten Architekturrisiken
-und/oder technischen Schulden.
-
-> Risikomanagement ist Projektmanagement für Erwachsene.
->
-> —  Tim Lister Atlantic Systems Guild
-
-Unter diesem Motto sollten Sie Architekturrisiken und/oder technische
-Schulden gezielt ermitteln, bewerten und Ihren Management-Stakeholdern
-(z.B. Projektleitung, Product-Owner) transparent machen.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Liste oder Tabelle von Risiken und/oder technischen Schulden, eventuell
-mit vorgeschlagenen Maßnahmen zur Risikovermeidung, Risikominimierung
-oder dem Abbau der technischen Schulden.
-
-Siehe [Risiken und technische
-Schulden](https://docs.arc42.org/section-11/) in der
-online-Dokumentation (auf Englisch!).
--->
 ---
 # Glossar
-<!--
-<div class="formalpara-title">
-
-**Inhalt**
-
-</div>
-
-Die wesentlichen fachlichen und technischen Begriffe, die Stakeholder im
-Zusammenhang mit dem System verwenden.
-
-Nutzen Sie das Glossar ebenfalls als Übersetzungsreferenz, falls Sie in
-mehrsprachigen Teams arbeiten.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Sie sollten relevante Begriffe klar definieren, so dass alle Beteiligten
-
--   diese Begriffe identisch verstehen, und
-
--   vermeiden, mehrere Begriffe für die gleiche Sache zu haben.
-
-Zweispaltige Tabelle mit \<Begriff> und \<Definition>.
-
-Eventuell weitere Spalten mit Übersetzungen, falls notwendig.
-
-Siehe [Glossar](https://docs.arc42.org/section-12/) in der
-online-Dokumentation (auf Englisch!).
-
-| Begriff        | Definition        |
-|----------------|-------------------|
-| *\<Begriff-1>* | *\<Definition-1>* |
-| *\<Begriff-2*  | *\<Definition-2>* |
--->
+| Begriff           | Definition                                                                                                                                                            |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| UMOC              | Akronym für "Unsafe Method Of Communication", der Name des Messenger-Systems                                                                                          |
+| Unsafe            | Im Kontext von UMOC: Features, die bewusst soziale Normen der Kommunikation verletzen (z.B. Mitlesen während des Tippens), jedoch technisch sicher implementiert sind |
+| Unsecure          | Technisch unsichere Implementierungen, die die Vertraulichkeit oder Integrität von Daten gefährden könnten (nicht das Ziel von UMOC)                                  |
+| REST              | Representational State Transfer, Architekturstil für verteilte Hypermedia-Systeme                                                                                     |
+| Websockets        | Kommunikationsprotokoll, das eine bidirektionale, vollwertige Kommunikation über eine einzelne TCP-Verbindung ermöglicht                                              |
+| Cloudflare Tunnel | Dienst, der lokale Server sicher im Internet verfügbar macht, ohne direkte Öffnung von Ports                                                                          |
+| JWT               | JSON Web Token, ein kompaktes, URL-sicheres Mittel zur Darstellung von Ansprüchen, die zwischen zwei Parteien übertragen werden                                       |
+| SQLite            | Leichtgewichtige, dateibasierte SQL-Datenbanklösung                                                                                                                   |
+| E2EE              | End-to-End-Encryption, Verschlüsselungsmethode, bei der nur die kommunizierenden Benutzer die Nachrichten lesen können                                                |
+| Flask             | Leichtgewichtiges Web-Framework für Python                                                                                                                            |
+| Angular           | TypeScript-basiertes Frontend-Framework                                                                                                                               |
