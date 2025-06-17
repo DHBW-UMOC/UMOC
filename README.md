@@ -16,9 +16,8 @@ Go to this Website and Sign up: app.umoc.chat
 - Gelöschte Nachrichten werden als "[Nutzername] hat folgende NAchricht gelöscht: [...]" ✓✓
 - Item: Lightmode ✓✓
 - Unsichere-Features sind als konsumierbare Items verfügbar ✓✓
----
-- Streaks welche einem Nutzer Punkte generieren ✓
-- Mit Punkten können Items gekauft werden. ✓
+- Streaks welche einem Nutzer Punkte generieren ✓✓
+- Mit Punkten können Items gekauft werden. ✓✓
 ---
 - in Group write as other user ╳
 - Empfänger kann die noch nicht gesandte Nachricht ebenfalls bearbeiten ╳
